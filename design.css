@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: "Teko", sans-serif;
+}
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 1.65rem;
+}
+
+.left {
+    font-size: 2.5rem;
+}
+
+.right {
+    font-size: 1.2rem;
+}
+
+main hr {
+    border: 0;
+    background: black;
+    height: 5px;
+    margin: 10px 50px;
+}
+
+.third h2, .fourth h3, .second h1, .fifth h10 {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    text-align: center;
+}
+
+.first>div {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.second, .third, .fourth, .fifth {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.fourth p, .fifth p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.fourth p1, .fourth p2, .fourth p3 {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.fourth .btn1 {
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.leftsection {
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.leftsection .btn, .leftsection .btn1 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 4px solid;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.leftsection .btn:hover, .leftsection .btn1:hover {
+    font-size: 1.2rem;
+    color: rgb(255, 0, 0);
+}
+
+.rightsection {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 10%;
+    max-width: 300px;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box2 {
+    margin: 10px;
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.box2 img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.vertical-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.vertical-desc {
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer a, .footer h {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 5px;
+}
+
+footer a:hover {
+    color: rgb(251, 251, 251);
+    font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftsection {
+        margin-top: 20px;
+    }
+
+    .container {
+        margin: 10px 0;
+    }
+
+    .box2 {
+        flex: 1 1 100px;
+    }
+
+    .second, .third, .fourth, .fifth {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        font-size: 2rem;
+    }
+
+    .right {
+        font-size: 1rem;
+    }
+
+    .leftsection, .rightsection {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .leftsection .btn, .leftsection .btn1 {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer h4 {
+        font-size: 1.5rem;
+    }
+
+    .footer a, .footer h {
+        font-size: 0.9rem;
+    }
+}
